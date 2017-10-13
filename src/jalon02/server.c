@@ -90,20 +90,20 @@ void * start_routine_new_client(void * arg){
 	printf("Connection accepted \n");
 	printf("client_sock : %i \n", *client_sock);
 
-	for(;;){
 
-		do{memset(buffer, 0, BUFFER_MAX_SIZE);
-			client_msg_size = readline(* client_sock, buffer, BUFFER_MAX_SIZE);
-			printf("message %s\n", buffer);
-			sendline(* client_sock, buffer, BUFFER_MAX_SIZE);
-		}while(strcmp(buffer, "/quit\n"));
+	do{
+		memset(buffer, 0, BUFFER_MAX_SIZE);
+		client_msg_size = readline(* client_sock, buffer, BUFFER_MAX_SIZE);
+		printf("message %s\n", buffer);
+		sendline(* client_sock, buffer, BUFFER_MAX_SIZE);
+	}while(strcmp(buffer, "/quit\n"));
 		
-	}
+	
 
         //clean up client socket
 	close(* client_sock);
 	pthread_mutex_lock(&mut);
-	connected_nb --;
+		connected_nb --;
 	pthread_mutex_unlock(&mut);
 
 	pthread_exit(NULL);
@@ -161,7 +161,7 @@ int main(int argc, char** argv)
 		if (connected_nb < MAXCONN){
 
 			pthread_mutex_lock(&mut);
-			connected_nb ++;
+				connected_nb ++;
 			pthread_mutex_unlock(&mut);
 
 			if(pthread_create(&nthread, NULL, start_routine_new_client, client_sock) == -1){
