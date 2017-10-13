@@ -142,42 +142,41 @@ int main(int argc, char** argv)
 	MAXCONN = 2;
 	do_listen(sockfd, MAXCONN);
 
-	for (;;){
+	int * client_sock;
+	struct sockaddr cl_addr;
+	socklen_t cl_addrlen = sizeof(cl_addr);
+	pthread_t nthread; 
 
-		int * client_sock;
-		struct sockaddr cl_addr;
-		socklen_t cl_addrlen = sizeof(cl_addr);
-		pthread_t nthread;
+	pthread_mutex_init(&mut, NULL);
+	pthread_mutex_lock(&mut);
+	connected_nb = 0;
+	pthread_mutex_unlock(&mut);
 
-		pthread_mutex_init(&mut, NULL);
-		pthread_mutex_lock(&mut);
-		connected_nb = 0;
-		pthread_mutex_unlock(&mut);
-
-		client_sock = malloc(sizeof(int));
-		for(;;){
+	for(;;){
               //accept connection from client
-			*  client_sock=do_accept(sockfd, &cl_addr, &cl_addrlen, &connected_nb, MAXCONN);
+		client_sock = malloc(sizeof(int));
 
-			if (connected_nb < MAXCONN){
+		*  client_sock=do_accept(sockfd, &cl_addr, &cl_addrlen, &connected_nb, MAXCONN);
 
-				pthread_mutex_lock(&mut);
-				connected_nb ++;
-				pthread_mutex_unlock(&mut);
+		if (connected_nb < MAXCONN){
 
-				if(pthread_create(&nthread, NULL, start_routine_new_client, client_sock) == -1){
-					perror("pthread_create");
-					exit(EXIT_FAILURE);
-				}
-				pthread_detach(nthread);
+			pthread_mutex_lock(&mut);
+			connected_nb ++;
+			pthread_mutex_unlock(&mut);
+
+			if(pthread_create(&nthread, NULL, start_routine_new_client, client_sock) == -1){
+				perror("pthread_create");
+				exit(EXIT_FAILURE);
 			}
-			else{
-				close(* client_sock);
-			}
+			pthread_detach(nthread);
+		}
+		else{
+			close(* client_sock);
 		}
 	}
   //clean up server socket
 	close(sockfd);
+	pthread_mutex_destroy(&mut);
 
 	return 0;
 }
