@@ -1,6 +1,6 @@
-/home/elmarie/workspace_c/jalon02_multithreading/build/CMakeFiles/rebuild_cache.dir
-/home/elmarie/workspace_c/jalon02_multithreading/build/CMakeFiles/edit_cache.dir
-/home/elmarie/workspace_c/jalon02_multithreading/build/jalon02/CMakeFiles/rebuild_cache.dir
-/home/elmarie/workspace_c/jalon02_multithreading/build/jalon02/CMakeFiles/edit_cache.dir
-/home/elmarie/workspace_c/jalon02_multithreading/build/jalon02/CMakeFiles/RE216_JALON02_SERVER.dir
-/home/elmarie/workspace_c/jalon02_multithreading/build/jalon02/CMakeFiles/RE216_JALON02_CLIENT.dir
+/home/elmarie/Documents/jalon04_marie_kern/build/CMakeFiles/rebuild_cache.dir
+/home/elmarie/Documents/jalon04_marie_kern/build/CMakeFiles/edit_cache.dir
+/home/elmarie/Documents/jalon04_marie_kern/build/jalon04/CMakeFiles/rebuild_cache.dir
+/home/elmarie/Documents/jalon04_marie_kern/build/jalon04/CMakeFiles/edit_cache.dir
+/home/elmarie/Documents/jalon04_marie_kern/build/jalon04/CMakeFiles/RE216_JALON04_SERVER.dir
+/home/elmarie/Documents/jalon04_marie_kern/build/jalon04/CMakeFiles/RE216_JALON04_CLIENT.dir

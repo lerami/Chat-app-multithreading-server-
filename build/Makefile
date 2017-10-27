@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/elmarie/workspace_c/jalon02_multithreading/src
+CMAKE_SOURCE_DIR = /home/elmarie/Documents/jalon04_marie_kern/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/elmarie/workspace_c/jalon02_multithreading/build
+CMAKE_BINARY_DIR = /home/elmarie/Documents/jalon04_marie_kern/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,9 +80,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/elmarie/workspace_c/jalon02_multithreading/build/CMakeFiles /home/elmarie/workspace_c/jalon02_multithreading/build/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/elmarie/Documents/jalon04_marie_kern/build/CMakeFiles /home/elmarie/Documents/jalon04_marie_kern/build/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/elmarie/workspace_c/jalon02_multithreading/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/elmarie/Documents/jalon04_marie_kern/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -111,30 +111,30 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named RE216_JALON02_SERVER
+# Target rules for targets named RE216_JALON04_SERVER
 
 # Build rule for target.
-RE216_JALON02_SERVER: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 RE216_JALON02_SERVER
-.PHONY : RE216_JALON02_SERVER
+RE216_JALON04_SERVER: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 RE216_JALON04_SERVER
+.PHONY : RE216_JALON04_SERVER
 
 # fast build rule for target.
-RE216_JALON02_SERVER/fast:
-	$(MAKE) -f jalon02/CMakeFiles/RE216_JALON02_SERVER.dir/build.make jalon02/CMakeFiles/RE216_JALON02_SERVER.dir/build
-.PHONY : RE216_JALON02_SERVER/fast
+RE216_JALON04_SERVER/fast:
+	$(MAKE) -f jalon04/CMakeFiles/RE216_JALON04_SERVER.dir/build.make jalon04/CMakeFiles/RE216_JALON04_SERVER.dir/build
+.PHONY : RE216_JALON04_SERVER/fast
 
 #=============================================================================
-# Target rules for targets named RE216_JALON02_CLIENT
+# Target rules for targets named RE216_JALON04_CLIENT
 
 # Build rule for target.
-RE216_JALON02_CLIENT: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 RE216_JALON02_CLIENT
-.PHONY : RE216_JALON02_CLIENT
+RE216_JALON04_CLIENT: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 RE216_JALON04_CLIENT
+.PHONY : RE216_JALON04_CLIENT
 
 # fast build rule for target.
-RE216_JALON02_CLIENT/fast:
-	$(MAKE) -f jalon02/CMakeFiles/RE216_JALON02_CLIENT.dir/build.make jalon02/CMakeFiles/RE216_JALON02_CLIENT.dir/build
-.PHONY : RE216_JALON02_CLIENT/fast
+RE216_JALON04_CLIENT/fast:
+	$(MAKE) -f jalon04/CMakeFiles/RE216_JALON04_CLIENT.dir/build.make jalon04/CMakeFiles/RE216_JALON04_CLIENT.dir/build
+.PHONY : RE216_JALON04_CLIENT/fast
 
 # Help Target
 help:
@@ -144,8 +144,8 @@ help:
 	@echo "... depend"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
-	@echo "... RE216_JALON02_SERVER"
-	@echo "... RE216_JALON02_CLIENT"
+	@echo "... RE216_JALON04_SERVER"
+	@echo "... RE216_JALON04_CLIENT"
 .PHONY : help
 
 

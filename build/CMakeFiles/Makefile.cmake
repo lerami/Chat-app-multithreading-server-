@@ -12,8 +12,8 @@ set(CMAKE_MAKEFILE_DEPENDS
   "CMakeFiles/3.7.2/CMakeSystem.cmake"
   "CMakeFiles/feature_tests.c"
   "CMakeFiles/feature_tests.cxx"
-  "/home/elmarie/workspace_c/jalon02_multithreading/src/CMakeLists.txt"
-  "/home/elmarie/workspace_c/jalon02_multithreading/src/jalon02/CMakeLists.txt"
+  "/home/elmarie/Documents/jalon04_marie_kern/src/CMakeLists.txt"
+  "/home/elmarie/Documents/jalon04_marie_kern/src/jalon04/CMakeLists.txt"
   "/usr/share/cmake-3.7/Modules/CMakeCCompiler.cmake.in"
   "/usr/share/cmake-3.7/Modules/CMakeCCompilerABI.c"
   "/usr/share/cmake-3.7/Modules/CMakeCInformation.cmake"
@@ -120,11 +120,11 @@ set(CMAKE_MAKEFILE_PRODUCTS
   "CMakeFiles/3.7.2/CMakeCCompiler.cmake"
   "CMakeFiles/3.7.2/CMakeCXXCompiler.cmake"
   "CMakeFiles/CMakeDirectoryInformation.cmake"
-  "jalon02/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "jalon04/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
-  "jalon02/CMakeFiles/RE216_JALON02_SERVER.dir/DependInfo.cmake"
-  "jalon02/CMakeFiles/RE216_JALON02_CLIENT.dir/DependInfo.cmake"
+  "jalon04/CMakeFiles/RE216_JALON04_SERVER.dir/DependInfo.cmake"
+  "jalon04/CMakeFiles/RE216_JALON04_CLIENT.dir/DependInfo.cmake"
   )

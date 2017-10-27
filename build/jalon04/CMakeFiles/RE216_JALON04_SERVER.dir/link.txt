@@ -1,0 +1,1 @@
+/usr/bin/cc  -g   CMakeFiles/RE216_JALON04_SERVER.dir/server/server.c.o CMakeFiles/RE216_JALON04_SERVER.dir/server/users.c.o CMakeFiles/RE216_JALON04_SERVER.dir/server/channel.c.o CMakeFiles/RE216_JALON04_SERVER.dir/server/file_transfer.c.o CMakeFiles/RE216_JALON04_SERVER.dir/commons/functions.c.o  -o RE216_JALON04_SERVER -rdynamic -lpthread 
