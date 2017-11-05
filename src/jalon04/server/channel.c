@@ -1,4 +1,3 @@
-
 #include <time.h>
 #include <stdio.h>
 #include <stdlib.h>
@@ -13,8 +12,8 @@
 #include "channel.h"
 
 struct channel_user {
-	int socket;
-	struct channel_user* nextChannelUser;
+  int socket;
+  struct channel_user* nextChannelUser;
 };
 
 
@@ -27,14 +26,22 @@ struct channel {
 };
 
 
-void newChannel(struct channel** firstChannel, char channel_name[256]) {
+int newChannel(struct channel** firstChannel, char channel_name[256]) {
   struct channel* channel = *firstChannel;
+  struct channel* temp_chan = *firstChannel;
+
+  while(temp_chan!=NULL){
+    if(strcmp(temp_chan->channel_name, channel_name) == 0)
+      return -1;
+    temp_chan=temp_chan->nextChannel;
+  }
 
   struct channel* newChannel = malloc(sizeof(struct channel));
   struct channel_user *newChannelUser = malloc(sizeof(struct channel_user));
+
   strcpy(newChannel->channel_name,channel_name);
   newChannel->user_nb=0;
-  newChannel->channel_user=newChannelUser;
+  newChannel->channel_user=NULL;
   newChannel->nextChannel=NULL;
 
   if(channel==NULL) {
@@ -43,14 +50,12 @@ void newChannel(struct channel** firstChannel, char channel_name[256]) {
   }
   else {
       while (channel->nextChannel!=NULL) {
-      	if(strcmp(channel->channel_name, channel_name) == 0){
-      		perror("Channel name not available, please choose another one");
-      		exit(EXIT_FAILURE);
-      	}
         channel=channel->nextChannel;
       }
       channel->nextChannel=newChannel;
   }
+
+  return 0;
 }
 
 void destroyChannel(struct channel** firstChannel, char* channel_name) {
@@ -58,8 +63,8 @@ void destroyChannel(struct channel** firstChannel, char* channel_name) {
   struct channel* prevChannel=NULL;
 
   if(channel->user_nb > 0){
-  	perror("This channel is not empty");
-  	exit(EXIT_FAILURE);
+    perror("This channel is not empty");
+    exit(EXIT_FAILURE);
   }
 
   while(channel!=NULL){
@@ -99,18 +104,19 @@ void listChannel(struct channel** firstChannel, char * dest){
 
 }
 
-void addUserToChannel(struct channel** firstChannel, char* channel_name, int sockfd){
+int addUserToChannel(struct channel** firstChannel, char* channel_name, int sockfd){
 struct channel* channel = *firstChannel;
 
   while(channel!=NULL){
 
-  	if(strcmp(channel->channel_name,channel_name)==0){
-  		newChannelUser(&(channel->channel_user),sockfd);
-  		++ channel->user_nb;
-  	}
-  	channel=channel->nextChannel;
-	}
-
+    if(strcmp(channel->channel_name,channel_name)==0){
+      newChannelUser(&(channel->channel_user),sockfd);
+      ++channel->user_nb;
+      return 0;
+    }
+    channel=channel->nextChannel;
+  }
+  return -1;
 //perror("This channel does not exist");
 
 }
@@ -137,23 +143,28 @@ void newChannelUser(struct channel_user** firstChannelUser, int sockfd){
   }
 }
 
-void removeUserFromChannel(struct channel** firstChannel, char* channel_name, int sockfd){
-	struct channel * channel = *firstChannel;
-
-    while(channel!=NULL){
+int removeUserFromChannel(struct channel**  firstChannel, char* channel_name, int sockfd){
+  struct channel * channel = *firstChannel;
+  int res;
+  while(channel!=NULL){
 
     if(strcmp(channel->channel_name,channel_name)==0){
-      removeChannelUser(&(channel->channel_user),sockfd);
-      -- channel->user_nb;
+      res=removeChannelUser(&(channel->channel_user),sockfd);
+      if(res==0){
+        --channel->user_nb;
+        if(channel->user_nb==0){
+          destroyChannel(firstChannel, channel_name);
+        }
+      }
+      return res;
     }
-    channel->nextChannel=channel;
+    channel=channel->nextChannel;
+  }
+  return -1;
+
 }
 
-perror("This channel does not exist");
-
-}
-
-void removeChannelUser(struct channel_user** firstChannelUser, int sockfd){
+int removeChannelUser(struct channel_user** firstChannelUser, int sockfd){
   struct channel_user * channel_user = *firstChannelUser;
   struct channel_user * prevChannelUser = NULL;
 
@@ -165,8 +176,31 @@ void removeChannelUser(struct channel_user** firstChannelUser, int sockfd){
       else {
         prevChannelUser->nextChannelUser=channel_user->nextChannelUser;
       }
+      return 0;
     }
     prevChannelUser=channel_user;
     channel_user=channel_user->nextChannelUser;
+  }
+  return -1;
+}
+
+void getChannelUsers(struct channel** firstChannel, char channel_name[256], int clientSock, int* rcvSock, int* nbUsers){
+  struct channel* channel = *firstChannel;
+  *nbUsers=0;
+  while(channel!=NULL){
+
+    if(strcmp(channel->channel_name,channel_name)==0){
+      struct channel_user* channelUsers = channel->channel_user;
+      while(channelUsers!=NULL){
+        if(channelUsers->socket != clientSock){
+          *(rcvSock + *nbUsers) = channelUsers->socket;
+          *nbUsers = *nbUsers+1;
+        }
+
+        channelUsers = channelUsers->nextChannelUser;
+      }
+
+    }
+    channel=channel->nextChannel;
   }
 }

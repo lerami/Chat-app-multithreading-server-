@@ -13,6 +13,7 @@ include_directories(
 #add here sources that are common between server and client
 SET(SRC_COMMONS
 	commons/functions.c
+	commons/network.c
 )
 
 
@@ -29,9 +30,9 @@ target_link_libraries(RE216_JALON04_CLIENT ${CMAKE_THREAD_LIBS_INIT})
 #add here source files you need to compile and link to the server app
 SET(SRC_SERVER
 server/server.c
+server/server_lib.c
 server/users.c
 server/channel.c
-server/file_transfer.c
 )
 
 
