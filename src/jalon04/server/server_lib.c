@@ -45,7 +45,7 @@ void * start_routine_new_client(void * arg){
   char userEntry[124];
 	char whoisBuff[40];
 	char nickBuff[260];
-  //char msgBuff[510];
+  char msgBuff[510];
   char msgallBuff[510];
   char createChannelBuff[100];
   char joinChannelBuff[100];
