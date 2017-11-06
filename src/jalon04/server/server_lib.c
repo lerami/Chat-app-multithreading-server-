@@ -21,17 +21,17 @@ struct arg_threads {
   struct sockaddr_in cl_addr;
 };
 
-char resize_buffer(char * buffer){
-  char * res = malloc(sizeof(char));
-  int i = 0;
+// char resize_buffer(char * buffer){
+//   char * res = malloc(sizeof(char));
+//   int i = 0;
 
-  do {
-    *(char+i) = buffer[i];
-    i++;
-  } while (buffer[i] != '\0')
+//   do {
+//     *(char+i) = buffer[i];
+//     i++;
+//   } while (buffer[i] != '\0')
 
-  return res;
-}
+//   return res;
+// }
 
 void * start_routine_new_client(void * arg){
 	char * buffer = malloc(sizeof(char) * BUFFER_MAX_SIZE);

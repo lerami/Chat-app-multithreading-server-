@@ -1,4 +1,4 @@
-# Install script for directory: /home/elmarie/Documents/jalon04_marie_kern/src/jalon04
+# Install script for directory: /home/elmarie/Chat-app-multithreading-server-/src/jalon04
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

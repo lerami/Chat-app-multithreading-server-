@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/elmarie/Documents/jalon04_marie_kern/src
+CMAKE_SOURCE_DIR = /home/elmarie/Chat-app-multithreading-server-/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/elmarie/Documents/jalon04_marie_kern/build
+CMAKE_BINARY_DIR = /home/elmarie/Chat-app-multithreading-server-/build
 
 # Include any dependencies generated for this target.
 include jalon04/CMakeFiles/RE216_JALON04_CLIENT.dir/depend.make
@@ -58,17 +58,17 @@ include jalon04/CMakeFiles/RE216_JALON04_CLIENT.dir/progress.make
 include jalon04/CMakeFiles/RE216_JALON04_CLIENT.dir/flags.make
 
 jalon04/CMakeFiles/RE216_JALON04_CLIENT.dir/client/client.c.o: jalon04/CMakeFiles/RE216_JALON04_CLIENT.dir/flags.make
-jalon04/CMakeFiles/RE216_JALON04_CLIENT.dir/client/client.c.o: /home/elmarie/Documents/jalon04_marie_kern/src/jalon04/client/client.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/elmarie/Documents/jalon04_marie_kern/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object jalon04/CMakeFiles/RE216_JALON04_CLIENT.dir/client/client.c.o"
-	cd /home/elmarie/Documents/jalon04_marie_kern/build/jalon04 && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/RE216_JALON04_CLIENT.dir/client/client.c.o   -c /home/elmarie/Documents/jalon04_marie_kern/src/jalon04/client/client.c
+jalon04/CMakeFiles/RE216_JALON04_CLIENT.dir/client/client.c.o: /home/elmarie/Chat-app-multithreading-server-/src/jalon04/client/client.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/elmarie/Chat-app-multithreading-server-/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object jalon04/CMakeFiles/RE216_JALON04_CLIENT.dir/client/client.c.o"
+	cd /home/elmarie/Chat-app-multithreading-server-/build/jalon04 && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/RE216_JALON04_CLIENT.dir/client/client.c.o   -c /home/elmarie/Chat-app-multithreading-server-/src/jalon04/client/client.c
 
 jalon04/CMakeFiles/RE216_JALON04_CLIENT.dir/client/client.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/RE216_JALON04_CLIENT.dir/client/client.c.i"
-	cd /home/elmarie/Documents/jalon04_marie_kern/build/jalon04 && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/elmarie/Documents/jalon04_marie_kern/src/jalon04/client/client.c > CMakeFiles/RE216_JALON04_CLIENT.dir/client/client.c.i
+	cd /home/elmarie/Chat-app-multithreading-server-/build/jalon04 && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/elmarie/Chat-app-multithreading-server-/src/jalon04/client/client.c > CMakeFiles/RE216_JALON04_CLIENT.dir/client/client.c.i
 
 jalon04/CMakeFiles/RE216_JALON04_CLIENT.dir/client/client.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/RE216_JALON04_CLIENT.dir/client/client.c.s"
-	cd /home/elmarie/Documents/jalon04_marie_kern/build/jalon04 && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/elmarie/Documents/jalon04_marie_kern/src/jalon04/client/client.c -o CMakeFiles/RE216_JALON04_CLIENT.dir/client/client.c.s
+	cd /home/elmarie/Chat-app-multithreading-server-/build/jalon04 && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/elmarie/Chat-app-multithreading-server-/src/jalon04/client/client.c -o CMakeFiles/RE216_JALON04_CLIENT.dir/client/client.c.s
 
 jalon04/CMakeFiles/RE216_JALON04_CLIENT.dir/client/client.c.o.requires:
 
@@ -82,17 +82,17 @@ jalon04/CMakeFiles/RE216_JALON04_CLIENT.dir/client/client.c.o.provides.build: ja
 
 
 jalon04/CMakeFiles/RE216_JALON04_CLIENT.dir/commons/functions.c.o: jalon04/CMakeFiles/RE216_JALON04_CLIENT.dir/flags.make
-jalon04/CMakeFiles/RE216_JALON04_CLIENT.dir/commons/functions.c.o: /home/elmarie/Documents/jalon04_marie_kern/src/jalon04/commons/functions.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/elmarie/Documents/jalon04_marie_kern/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object jalon04/CMakeFiles/RE216_JALON04_CLIENT.dir/commons/functions.c.o"
-	cd /home/elmarie/Documents/jalon04_marie_kern/build/jalon04 && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/RE216_JALON04_CLIENT.dir/commons/functions.c.o   -c /home/elmarie/Documents/jalon04_marie_kern/src/jalon04/commons/functions.c
+jalon04/CMakeFiles/RE216_JALON04_CLIENT.dir/commons/functions.c.o: /home/elmarie/Chat-app-multithreading-server-/src/jalon04/commons/functions.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/elmarie/Chat-app-multithreading-server-/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object jalon04/CMakeFiles/RE216_JALON04_CLIENT.dir/commons/functions.c.o"
+	cd /home/elmarie/Chat-app-multithreading-server-/build/jalon04 && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/RE216_JALON04_CLIENT.dir/commons/functions.c.o   -c /home/elmarie/Chat-app-multithreading-server-/src/jalon04/commons/functions.c
 
 jalon04/CMakeFiles/RE216_JALON04_CLIENT.dir/commons/functions.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/RE216_JALON04_CLIENT.dir/commons/functions.c.i"
-	cd /home/elmarie/Documents/jalon04_marie_kern/build/jalon04 && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/elmarie/Documents/jalon04_marie_kern/src/jalon04/commons/functions.c > CMakeFiles/RE216_JALON04_CLIENT.dir/commons/functions.c.i
+	cd /home/elmarie/Chat-app-multithreading-server-/build/jalon04 && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/elmarie/Chat-app-multithreading-server-/src/jalon04/commons/functions.c > CMakeFiles/RE216_JALON04_CLIENT.dir/commons/functions.c.i
 
 jalon04/CMakeFiles/RE216_JALON04_CLIENT.dir/commons/functions.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/RE216_JALON04_CLIENT.dir/commons/functions.c.s"
-	cd /home/elmarie/Documents/jalon04_marie_kern/build/jalon04 && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/elmarie/Documents/jalon04_marie_kern/src/jalon04/commons/functions.c -o CMakeFiles/RE216_JALON04_CLIENT.dir/commons/functions.c.s
+	cd /home/elmarie/Chat-app-multithreading-server-/build/jalon04 && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/elmarie/Chat-app-multithreading-server-/src/jalon04/commons/functions.c -o CMakeFiles/RE216_JALON04_CLIENT.dir/commons/functions.c.s
 
 jalon04/CMakeFiles/RE216_JALON04_CLIENT.dir/commons/functions.c.o.requires:
 
@@ -105,20 +105,46 @@ jalon04/CMakeFiles/RE216_JALON04_CLIENT.dir/commons/functions.c.o.provides: jalo
 jalon04/CMakeFiles/RE216_JALON04_CLIENT.dir/commons/functions.c.o.provides.build: jalon04/CMakeFiles/RE216_JALON04_CLIENT.dir/commons/functions.c.o
 
 
+jalon04/CMakeFiles/RE216_JALON04_CLIENT.dir/commons/network.c.o: jalon04/CMakeFiles/RE216_JALON04_CLIENT.dir/flags.make
+jalon04/CMakeFiles/RE216_JALON04_CLIENT.dir/commons/network.c.o: /home/elmarie/Chat-app-multithreading-server-/src/jalon04/commons/network.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/elmarie/Chat-app-multithreading-server-/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object jalon04/CMakeFiles/RE216_JALON04_CLIENT.dir/commons/network.c.o"
+	cd /home/elmarie/Chat-app-multithreading-server-/build/jalon04 && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/RE216_JALON04_CLIENT.dir/commons/network.c.o   -c /home/elmarie/Chat-app-multithreading-server-/src/jalon04/commons/network.c
+
+jalon04/CMakeFiles/RE216_JALON04_CLIENT.dir/commons/network.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/RE216_JALON04_CLIENT.dir/commons/network.c.i"
+	cd /home/elmarie/Chat-app-multithreading-server-/build/jalon04 && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/elmarie/Chat-app-multithreading-server-/src/jalon04/commons/network.c > CMakeFiles/RE216_JALON04_CLIENT.dir/commons/network.c.i
+
+jalon04/CMakeFiles/RE216_JALON04_CLIENT.dir/commons/network.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/RE216_JALON04_CLIENT.dir/commons/network.c.s"
+	cd /home/elmarie/Chat-app-multithreading-server-/build/jalon04 && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/elmarie/Chat-app-multithreading-server-/src/jalon04/commons/network.c -o CMakeFiles/RE216_JALON04_CLIENT.dir/commons/network.c.s
+
+jalon04/CMakeFiles/RE216_JALON04_CLIENT.dir/commons/network.c.o.requires:
+
+.PHONY : jalon04/CMakeFiles/RE216_JALON04_CLIENT.dir/commons/network.c.o.requires
+
+jalon04/CMakeFiles/RE216_JALON04_CLIENT.dir/commons/network.c.o.provides: jalon04/CMakeFiles/RE216_JALON04_CLIENT.dir/commons/network.c.o.requires
+	$(MAKE) -f jalon04/CMakeFiles/RE216_JALON04_CLIENT.dir/build.make jalon04/CMakeFiles/RE216_JALON04_CLIENT.dir/commons/network.c.o.provides.build
+.PHONY : jalon04/CMakeFiles/RE216_JALON04_CLIENT.dir/commons/network.c.o.provides
+
+jalon04/CMakeFiles/RE216_JALON04_CLIENT.dir/commons/network.c.o.provides.build: jalon04/CMakeFiles/RE216_JALON04_CLIENT.dir/commons/network.c.o
+
+
 # Object files for target RE216_JALON04_CLIENT
 RE216_JALON04_CLIENT_OBJECTS = \
 "CMakeFiles/RE216_JALON04_CLIENT.dir/client/client.c.o" \
-"CMakeFiles/RE216_JALON04_CLIENT.dir/commons/functions.c.o"
+"CMakeFiles/RE216_JALON04_CLIENT.dir/commons/functions.c.o" \
+"CMakeFiles/RE216_JALON04_CLIENT.dir/commons/network.c.o"
 
 # External object files for target RE216_JALON04_CLIENT
 RE216_JALON04_CLIENT_EXTERNAL_OBJECTS =
 
 jalon04/RE216_JALON04_CLIENT: jalon04/CMakeFiles/RE216_JALON04_CLIENT.dir/client/client.c.o
 jalon04/RE216_JALON04_CLIENT: jalon04/CMakeFiles/RE216_JALON04_CLIENT.dir/commons/functions.c.o
+jalon04/RE216_JALON04_CLIENT: jalon04/CMakeFiles/RE216_JALON04_CLIENT.dir/commons/network.c.o
 jalon04/RE216_JALON04_CLIENT: jalon04/CMakeFiles/RE216_JALON04_CLIENT.dir/build.make
 jalon04/RE216_JALON04_CLIENT: jalon04/CMakeFiles/RE216_JALON04_CLIENT.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/elmarie/Documents/jalon04_marie_kern/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking C executable RE216_JALON04_CLIENT"
-	cd /home/elmarie/Documents/jalon04_marie_kern/build/jalon04 && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/RE216_JALON04_CLIENT.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/elmarie/Chat-app-multithreading-server-/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking C executable RE216_JALON04_CLIENT"
+	cd /home/elmarie/Chat-app-multithreading-server-/build/jalon04 && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/RE216_JALON04_CLIENT.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 jalon04/CMakeFiles/RE216_JALON04_CLIENT.dir/build: jalon04/RE216_JALON04_CLIENT
@@ -127,14 +153,15 @@ jalon04/CMakeFiles/RE216_JALON04_CLIENT.dir/build: jalon04/RE216_JALON04_CLIENT
 
 jalon04/CMakeFiles/RE216_JALON04_CLIENT.dir/requires: jalon04/CMakeFiles/RE216_JALON04_CLIENT.dir/client/client.c.o.requires
 jalon04/CMakeFiles/RE216_JALON04_CLIENT.dir/requires: jalon04/CMakeFiles/RE216_JALON04_CLIENT.dir/commons/functions.c.o.requires
+jalon04/CMakeFiles/RE216_JALON04_CLIENT.dir/requires: jalon04/CMakeFiles/RE216_JALON04_CLIENT.dir/commons/network.c.o.requires
 
 .PHONY : jalon04/CMakeFiles/RE216_JALON04_CLIENT.dir/requires
 
 jalon04/CMakeFiles/RE216_JALON04_CLIENT.dir/clean:
-	cd /home/elmarie/Documents/jalon04_marie_kern/build/jalon04 && $(CMAKE_COMMAND) -P CMakeFiles/RE216_JALON04_CLIENT.dir/cmake_clean.cmake
+	cd /home/elmarie/Chat-app-multithreading-server-/build/jalon04 && $(CMAKE_COMMAND) -P CMakeFiles/RE216_JALON04_CLIENT.dir/cmake_clean.cmake
 .PHONY : jalon04/CMakeFiles/RE216_JALON04_CLIENT.dir/clean
 
 jalon04/CMakeFiles/RE216_JALON04_CLIENT.dir/depend:
-	cd /home/elmarie/Documents/jalon04_marie_kern/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/elmarie/Documents/jalon04_marie_kern/src /home/elmarie/Documents/jalon04_marie_kern/src/jalon04 /home/elmarie/Documents/jalon04_marie_kern/build /home/elmarie/Documents/jalon04_marie_kern/build/jalon04 /home/elmarie/Documents/jalon04_marie_kern/build/jalon04/CMakeFiles/RE216_JALON04_CLIENT.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/elmarie/Chat-app-multithreading-server-/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/elmarie/Chat-app-multithreading-server-/src /home/elmarie/Chat-app-multithreading-server-/src/jalon04 /home/elmarie/Chat-app-multithreading-server-/build /home/elmarie/Chat-app-multithreading-server-/build/jalon04 /home/elmarie/Chat-app-multithreading-server-/build/jalon04/CMakeFiles/RE216_JALON04_CLIENT.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : jalon04/CMakeFiles/RE216_JALON04_CLIENT.dir/depend
 

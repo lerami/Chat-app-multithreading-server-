@@ -1,4 +1,4 @@
-# Install script for directory: /home/elmarie/Documents/jalon04_marie_kern/src
+# Install script for directory: /home/elmarie/Chat-app-multithreading-server-/src
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -34,7 +34,7 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/elmarie/Documents/jalon04_marie_kern/build/jalon04/cmake_install.cmake")
+  include("/home/elmarie/Chat-app-multithreading-server-/build/jalon04/cmake_install.cmake")
 
 endif()
 
@@ -46,5 +46,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/elmarie/Documents/jalon04_marie_kern/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/elmarie/Chat-app-multithreading-server-/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

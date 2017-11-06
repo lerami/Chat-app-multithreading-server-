@@ -1,9 +1,10 @@
 file(REMOVE_RECURSE
   "CMakeFiles/RE216_JALON04_SERVER.dir/server/server.c.o"
+  "CMakeFiles/RE216_JALON04_SERVER.dir/server/server_lib.c.o"
   "CMakeFiles/RE216_JALON04_SERVER.dir/server/users.c.o"
   "CMakeFiles/RE216_JALON04_SERVER.dir/server/channel.c.o"
-  "CMakeFiles/RE216_JALON04_SERVER.dir/server/file_transfer.c.o"
   "CMakeFiles/RE216_JALON04_SERVER.dir/commons/functions.c.o"
+  "CMakeFiles/RE216_JALON04_SERVER.dir/commons/network.c.o"
   "RE216_JALON04_SERVER.pdb"
   "RE216_JALON04_SERVER"
 )

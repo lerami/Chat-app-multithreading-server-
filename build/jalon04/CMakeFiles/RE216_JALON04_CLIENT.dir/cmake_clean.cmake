@@ -1,6 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/RE216_JALON04_CLIENT.dir/client/client.c.o"
   "CMakeFiles/RE216_JALON04_CLIENT.dir/commons/functions.c.o"
+  "CMakeFiles/RE216_JALON04_CLIENT.dir/commons/network.c.o"
   "RE216_JALON04_CLIENT.pdb"
   "RE216_JALON04_CLIENT"
 )

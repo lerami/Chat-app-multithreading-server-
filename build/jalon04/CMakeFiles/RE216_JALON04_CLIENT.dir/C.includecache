@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/elmarie/Documents/jalon04_marie_kern/src/jalon04/client/client.c
+/home/elmarie/Chat-app-multithreading-server-/src/jalon04/client/client.c
 stdlib.h
 -
 unistd.h
@@ -24,11 +24,13 @@ netdb.h
 pthread.h
 -
 ../commons/functions.h
-/home/elmarie/Documents/jalon04_marie_kern/src/jalon04/commons/functions.h
+/home/elmarie/Chat-app-multithreading-server-/src/jalon04/commons/functions.h
+../commons/network.h
+/home/elmarie/Chat-app-multithreading-server-/src/jalon04/commons/network.h
 
-/home/elmarie/Documents/jalon04_marie_kern/src/jalon04/commons/functions.c
+/home/elmarie/Chat-app-multithreading-server-/src/jalon04/commons/functions.c
 functions.h
-/home/elmarie/Documents/jalon04_marie_kern/src/jalon04/commons/functions.h
+/home/elmarie/Chat-app-multithreading-server-/src/jalon04/commons/functions.h
 stdlib.h
 -
 unistd.h
@@ -44,9 +46,39 @@ sys/socket.h
 netdb.h
 -
 
-/home/elmarie/Documents/jalon04_marie_kern/src/jalon04/commons/functions.h
+/home/elmarie/Chat-app-multithreading-server-/src/jalon04/commons/functions.h
 stdio.h
 -
 stdlib.h
+-
+
+/home/elmarie/Chat-app-multithreading-server-/src/jalon04/commons/network.c
+stdlib.h
+-
+unistd.h
+-
+stdio.h
+-
+string.h
+-
+sys/types.h
+-
+sys/socket.h
+-
+netdb.h
+-
+pthread.h
+-
+functions.h
+/home/elmarie/Chat-app-multithreading-server-/src/jalon04/commons/functions.h
+network.h
+/home/elmarie/Chat-app-multithreading-server-/src/jalon04/commons/network.h
+
+/home/elmarie/Chat-app-multithreading-server-/src/jalon04/commons/network.h
+stdio.h
+-
+stdlib.h
+-
+netdb.h
 -
 

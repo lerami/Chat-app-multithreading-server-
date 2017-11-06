@@ -6,5 +6,5 @@ C_FLAGS = -g
 
 C_DEFINES = 
 
-C_INCLUDES = -I/home/elmarie/Documents/jalon04_marie_kern/src/jalon04/commons -I/home/elmarie/Documents/jalon04_marie_kern/src/jalon04/server -I/home/elmarie/Documents/jalon04_marie_kern/src/jalon04/client 
+C_INCLUDES = -I/home/elmarie/Chat-app-multithreading-server-/src/jalon04/commons -I/home/elmarie/Chat-app-multithreading-server-/src/jalon04/server -I/home/elmarie/Chat-app-multithreading-server-/src/jalon04/client 
 

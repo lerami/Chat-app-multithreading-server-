@@ -83,12 +83,12 @@ int main(int argc, char** argv)
 		client_sock = malloc(sizeof(int));
 
 		*client_sock=do_accept(sockfd, (struct sockaddr *) &cl_addr, &cl_addrlen, &connected_nb, MAXCONN);
-
+		pthread_mutex_lock(&mut);
 		if (connected_nb < MAXCONN){
 
-			pthread_mutex_lock(&mut);
+			//pthread_mutex_lock(&mut);
 				connected_nb ++;
-			pthread_mutex_unlock(&mut);
+			//pthread_mutex_unlock(&mut);
 
 			struct arg_threads* arg_threads = malloc(sizeof(struct arg_threads));
 			arg_threads->sockfd=client_sock;
@@ -105,6 +105,7 @@ int main(int argc, char** argv)
 		else{
 			close(* client_sock);
 		}
+		pthread_mutex_unlock(&mut);
 	}
   //clean up server socket
 	close(sockfd);

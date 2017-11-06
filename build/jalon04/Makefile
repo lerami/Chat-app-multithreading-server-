@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/elmarie/Documents/jalon04_marie_kern/src
+CMAKE_SOURCE_DIR = /home/elmarie/Chat-app-multithreading-server-/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/elmarie/Documents/jalon04_marie_kern/build
+CMAKE_BINARY_DIR = /home/elmarie/Chat-app-multithreading-server-/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,14 +80,14 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/elmarie/Documents/jalon04_marie_kern/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/elmarie/Documents/jalon04_marie_kern/build/CMakeFiles /home/elmarie/Documents/jalon04_marie_kern/build/jalon04/CMakeFiles/progress.marks
-	cd /home/elmarie/Documents/jalon04_marie_kern/build && $(MAKE) -f CMakeFiles/Makefile2 jalon04/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/elmarie/Documents/jalon04_marie_kern/build/CMakeFiles 0
+	cd /home/elmarie/Chat-app-multithreading-server-/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/elmarie/Chat-app-multithreading-server-/build/CMakeFiles /home/elmarie/Chat-app-multithreading-server-/build/jalon04/CMakeFiles/progress.marks
+	cd /home/elmarie/Chat-app-multithreading-server-/build && $(MAKE) -f CMakeFiles/Makefile2 jalon04/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/elmarie/Chat-app-multithreading-server-/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/elmarie/Documents/jalon04_marie_kern/build && $(MAKE) -f CMakeFiles/Makefile2 jalon04/clean
+	cd /home/elmarie/Chat-app-multithreading-server-/build && $(MAKE) -f CMakeFiles/Makefile2 jalon04/clean
 .PHONY : clean
 
 # The main clean target
@@ -97,22 +97,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/elmarie/Documents/jalon04_marie_kern/build && $(MAKE) -f CMakeFiles/Makefile2 jalon04/preinstall
+	cd /home/elmarie/Chat-app-multithreading-server-/build && $(MAKE) -f CMakeFiles/Makefile2 jalon04/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/elmarie/Documents/jalon04_marie_kern/build && $(MAKE) -f CMakeFiles/Makefile2 jalon04/preinstall
+	cd /home/elmarie/Chat-app-multithreading-server-/build && $(MAKE) -f CMakeFiles/Makefile2 jalon04/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/elmarie/Documents/jalon04_marie_kern/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/elmarie/Chat-app-multithreading-server-/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 jalon04/CMakeFiles/RE216_JALON04_SERVER.dir/rule:
-	cd /home/elmarie/Documents/jalon04_marie_kern/build && $(MAKE) -f CMakeFiles/Makefile2 jalon04/CMakeFiles/RE216_JALON04_SERVER.dir/rule
+	cd /home/elmarie/Chat-app-multithreading-server-/build && $(MAKE) -f CMakeFiles/Makefile2 jalon04/CMakeFiles/RE216_JALON04_SERVER.dir/rule
 .PHONY : jalon04/CMakeFiles/RE216_JALON04_SERVER.dir/rule
 
 # Convenience name for target.
@@ -122,12 +122,12 @@ RE216_JALON04_SERVER: jalon04/CMakeFiles/RE216_JALON04_SERVER.dir/rule
 
 # fast build rule for target.
 RE216_JALON04_SERVER/fast:
-	cd /home/elmarie/Documents/jalon04_marie_kern/build && $(MAKE) -f jalon04/CMakeFiles/RE216_JALON04_SERVER.dir/build.make jalon04/CMakeFiles/RE216_JALON04_SERVER.dir/build
+	cd /home/elmarie/Chat-app-multithreading-server-/build && $(MAKE) -f jalon04/CMakeFiles/RE216_JALON04_SERVER.dir/build.make jalon04/CMakeFiles/RE216_JALON04_SERVER.dir/build
 .PHONY : RE216_JALON04_SERVER/fast
 
 # Convenience name for target.
 jalon04/CMakeFiles/RE216_JALON04_CLIENT.dir/rule:
-	cd /home/elmarie/Documents/jalon04_marie_kern/build && $(MAKE) -f CMakeFiles/Makefile2 jalon04/CMakeFiles/RE216_JALON04_CLIENT.dir/rule
+	cd /home/elmarie/Chat-app-multithreading-server-/build && $(MAKE) -f CMakeFiles/Makefile2 jalon04/CMakeFiles/RE216_JALON04_CLIENT.dir/rule
 .PHONY : jalon04/CMakeFiles/RE216_JALON04_CLIENT.dir/rule
 
 # Convenience name for target.
@@ -137,7 +137,7 @@ RE216_JALON04_CLIENT: jalon04/CMakeFiles/RE216_JALON04_CLIENT.dir/rule
 
 # fast build rule for target.
 RE216_JALON04_CLIENT/fast:
-	cd /home/elmarie/Documents/jalon04_marie_kern/build && $(MAKE) -f jalon04/CMakeFiles/RE216_JALON04_CLIENT.dir/build.make jalon04/CMakeFiles/RE216_JALON04_CLIENT.dir/build
+	cd /home/elmarie/Chat-app-multithreading-server-/build && $(MAKE) -f jalon04/CMakeFiles/RE216_JALON04_CLIENT.dir/build.make jalon04/CMakeFiles/RE216_JALON04_CLIENT.dir/build
 .PHONY : RE216_JALON04_CLIENT/fast
 
 client/client.o: client/client.c.o
@@ -146,7 +146,7 @@ client/client.o: client/client.c.o
 
 # target to build an object file
 client/client.c.o:
-	cd /home/elmarie/Documents/jalon04_marie_kern/build && $(MAKE) -f jalon04/CMakeFiles/RE216_JALON04_CLIENT.dir/build.make jalon04/CMakeFiles/RE216_JALON04_CLIENT.dir/client/client.c.o
+	cd /home/elmarie/Chat-app-multithreading-server-/build && $(MAKE) -f jalon04/CMakeFiles/RE216_JALON04_CLIENT.dir/build.make jalon04/CMakeFiles/RE216_JALON04_CLIENT.dir/client/client.c.o
 .PHONY : client/client.c.o
 
 client/client.i: client/client.c.i
@@ -155,7 +155,7 @@ client/client.i: client/client.c.i
 
 # target to preprocess a source file
 client/client.c.i:
-	cd /home/elmarie/Documents/jalon04_marie_kern/build && $(MAKE) -f jalon04/CMakeFiles/RE216_JALON04_CLIENT.dir/build.make jalon04/CMakeFiles/RE216_JALON04_CLIENT.dir/client/client.c.i
+	cd /home/elmarie/Chat-app-multithreading-server-/build && $(MAKE) -f jalon04/CMakeFiles/RE216_JALON04_CLIENT.dir/build.make jalon04/CMakeFiles/RE216_JALON04_CLIENT.dir/client/client.c.i
 .PHONY : client/client.c.i
 
 client/client.s: client/client.c.s
@@ -164,7 +164,7 @@ client/client.s: client/client.c.s
 
 # target to generate assembly for a file
 client/client.c.s:
-	cd /home/elmarie/Documents/jalon04_marie_kern/build && $(MAKE) -f jalon04/CMakeFiles/RE216_JALON04_CLIENT.dir/build.make jalon04/CMakeFiles/RE216_JALON04_CLIENT.dir/client/client.c.s
+	cd /home/elmarie/Chat-app-multithreading-server-/build && $(MAKE) -f jalon04/CMakeFiles/RE216_JALON04_CLIENT.dir/build.make jalon04/CMakeFiles/RE216_JALON04_CLIENT.dir/client/client.c.s
 .PHONY : client/client.c.s
 
 commons/functions.o: commons/functions.c.o
@@ -173,8 +173,8 @@ commons/functions.o: commons/functions.c.o
 
 # target to build an object file
 commons/functions.c.o:
-	cd /home/elmarie/Documents/jalon04_marie_kern/build && $(MAKE) -f jalon04/CMakeFiles/RE216_JALON04_SERVER.dir/build.make jalon04/CMakeFiles/RE216_JALON04_SERVER.dir/commons/functions.c.o
-	cd /home/elmarie/Documents/jalon04_marie_kern/build && $(MAKE) -f jalon04/CMakeFiles/RE216_JALON04_CLIENT.dir/build.make jalon04/CMakeFiles/RE216_JALON04_CLIENT.dir/commons/functions.c.o
+	cd /home/elmarie/Chat-app-multithreading-server-/build && $(MAKE) -f jalon04/CMakeFiles/RE216_JALON04_SERVER.dir/build.make jalon04/CMakeFiles/RE216_JALON04_SERVER.dir/commons/functions.c.o
+	cd /home/elmarie/Chat-app-multithreading-server-/build && $(MAKE) -f jalon04/CMakeFiles/RE216_JALON04_CLIENT.dir/build.make jalon04/CMakeFiles/RE216_JALON04_CLIENT.dir/commons/functions.c.o
 .PHONY : commons/functions.c.o
 
 commons/functions.i: commons/functions.c.i
@@ -183,8 +183,8 @@ commons/functions.i: commons/functions.c.i
 
 # target to preprocess a source file
 commons/functions.c.i:
-	cd /home/elmarie/Documents/jalon04_marie_kern/build && $(MAKE) -f jalon04/CMakeFiles/RE216_JALON04_SERVER.dir/build.make jalon04/CMakeFiles/RE216_JALON04_SERVER.dir/commons/functions.c.i
-	cd /home/elmarie/Documents/jalon04_marie_kern/build && $(MAKE) -f jalon04/CMakeFiles/RE216_JALON04_CLIENT.dir/build.make jalon04/CMakeFiles/RE216_JALON04_CLIENT.dir/commons/functions.c.i
+	cd /home/elmarie/Chat-app-multithreading-server-/build && $(MAKE) -f jalon04/CMakeFiles/RE216_JALON04_SERVER.dir/build.make jalon04/CMakeFiles/RE216_JALON04_SERVER.dir/commons/functions.c.i
+	cd /home/elmarie/Chat-app-multithreading-server-/build && $(MAKE) -f jalon04/CMakeFiles/RE216_JALON04_CLIENT.dir/build.make jalon04/CMakeFiles/RE216_JALON04_CLIENT.dir/commons/functions.c.i
 .PHONY : commons/functions.c.i
 
 commons/functions.s: commons/functions.c.s
@@ -193,9 +193,39 @@ commons/functions.s: commons/functions.c.s
 
 # target to generate assembly for a file
 commons/functions.c.s:
-	cd /home/elmarie/Documents/jalon04_marie_kern/build && $(MAKE) -f jalon04/CMakeFiles/RE216_JALON04_SERVER.dir/build.make jalon04/CMakeFiles/RE216_JALON04_SERVER.dir/commons/functions.c.s
-	cd /home/elmarie/Documents/jalon04_marie_kern/build && $(MAKE) -f jalon04/CMakeFiles/RE216_JALON04_CLIENT.dir/build.make jalon04/CMakeFiles/RE216_JALON04_CLIENT.dir/commons/functions.c.s
+	cd /home/elmarie/Chat-app-multithreading-server-/build && $(MAKE) -f jalon04/CMakeFiles/RE216_JALON04_SERVER.dir/build.make jalon04/CMakeFiles/RE216_JALON04_SERVER.dir/commons/functions.c.s
+	cd /home/elmarie/Chat-app-multithreading-server-/build && $(MAKE) -f jalon04/CMakeFiles/RE216_JALON04_CLIENT.dir/build.make jalon04/CMakeFiles/RE216_JALON04_CLIENT.dir/commons/functions.c.s
 .PHONY : commons/functions.c.s
+
+commons/network.o: commons/network.c.o
+
+.PHONY : commons/network.o
+
+# target to build an object file
+commons/network.c.o:
+	cd /home/elmarie/Chat-app-multithreading-server-/build && $(MAKE) -f jalon04/CMakeFiles/RE216_JALON04_SERVER.dir/build.make jalon04/CMakeFiles/RE216_JALON04_SERVER.dir/commons/network.c.o
+	cd /home/elmarie/Chat-app-multithreading-server-/build && $(MAKE) -f jalon04/CMakeFiles/RE216_JALON04_CLIENT.dir/build.make jalon04/CMakeFiles/RE216_JALON04_CLIENT.dir/commons/network.c.o
+.PHONY : commons/network.c.o
+
+commons/network.i: commons/network.c.i
+
+.PHONY : commons/network.i
+
+# target to preprocess a source file
+commons/network.c.i:
+	cd /home/elmarie/Chat-app-multithreading-server-/build && $(MAKE) -f jalon04/CMakeFiles/RE216_JALON04_SERVER.dir/build.make jalon04/CMakeFiles/RE216_JALON04_SERVER.dir/commons/network.c.i
+	cd /home/elmarie/Chat-app-multithreading-server-/build && $(MAKE) -f jalon04/CMakeFiles/RE216_JALON04_CLIENT.dir/build.make jalon04/CMakeFiles/RE216_JALON04_CLIENT.dir/commons/network.c.i
+.PHONY : commons/network.c.i
+
+commons/network.s: commons/network.c.s
+
+.PHONY : commons/network.s
+
+# target to generate assembly for a file
+commons/network.c.s:
+	cd /home/elmarie/Chat-app-multithreading-server-/build && $(MAKE) -f jalon04/CMakeFiles/RE216_JALON04_SERVER.dir/build.make jalon04/CMakeFiles/RE216_JALON04_SERVER.dir/commons/network.c.s
+	cd /home/elmarie/Chat-app-multithreading-server-/build && $(MAKE) -f jalon04/CMakeFiles/RE216_JALON04_CLIENT.dir/build.make jalon04/CMakeFiles/RE216_JALON04_CLIENT.dir/commons/network.c.s
+.PHONY : commons/network.c.s
 
 server/channel.o: server/channel.c.o
 
@@ -203,7 +233,7 @@ server/channel.o: server/channel.c.o
 
 # target to build an object file
 server/channel.c.o:
-	cd /home/elmarie/Documents/jalon04_marie_kern/build && $(MAKE) -f jalon04/CMakeFiles/RE216_JALON04_SERVER.dir/build.make jalon04/CMakeFiles/RE216_JALON04_SERVER.dir/server/channel.c.o
+	cd /home/elmarie/Chat-app-multithreading-server-/build && $(MAKE) -f jalon04/CMakeFiles/RE216_JALON04_SERVER.dir/build.make jalon04/CMakeFiles/RE216_JALON04_SERVER.dir/server/channel.c.o
 .PHONY : server/channel.c.o
 
 server/channel.i: server/channel.c.i
@@ -212,7 +242,7 @@ server/channel.i: server/channel.c.i
 
 # target to preprocess a source file
 server/channel.c.i:
-	cd /home/elmarie/Documents/jalon04_marie_kern/build && $(MAKE) -f jalon04/CMakeFiles/RE216_JALON04_SERVER.dir/build.make jalon04/CMakeFiles/RE216_JALON04_SERVER.dir/server/channel.c.i
+	cd /home/elmarie/Chat-app-multithreading-server-/build && $(MAKE) -f jalon04/CMakeFiles/RE216_JALON04_SERVER.dir/build.make jalon04/CMakeFiles/RE216_JALON04_SERVER.dir/server/channel.c.i
 .PHONY : server/channel.c.i
 
 server/channel.s: server/channel.c.s
@@ -221,35 +251,8 @@ server/channel.s: server/channel.c.s
 
 # target to generate assembly for a file
 server/channel.c.s:
-	cd /home/elmarie/Documents/jalon04_marie_kern/build && $(MAKE) -f jalon04/CMakeFiles/RE216_JALON04_SERVER.dir/build.make jalon04/CMakeFiles/RE216_JALON04_SERVER.dir/server/channel.c.s
+	cd /home/elmarie/Chat-app-multithreading-server-/build && $(MAKE) -f jalon04/CMakeFiles/RE216_JALON04_SERVER.dir/build.make jalon04/CMakeFiles/RE216_JALON04_SERVER.dir/server/channel.c.s
 .PHONY : server/channel.c.s
-
-server/file_transfer.o: server/file_transfer.c.o
-
-.PHONY : server/file_transfer.o
-
-# target to build an object file
-server/file_transfer.c.o:
-	cd /home/elmarie/Documents/jalon04_marie_kern/build && $(MAKE) -f jalon04/CMakeFiles/RE216_JALON04_SERVER.dir/build.make jalon04/CMakeFiles/RE216_JALON04_SERVER.dir/server/file_transfer.c.o
-.PHONY : server/file_transfer.c.o
-
-server/file_transfer.i: server/file_transfer.c.i
-
-.PHONY : server/file_transfer.i
-
-# target to preprocess a source file
-server/file_transfer.c.i:
-	cd /home/elmarie/Documents/jalon04_marie_kern/build && $(MAKE) -f jalon04/CMakeFiles/RE216_JALON04_SERVER.dir/build.make jalon04/CMakeFiles/RE216_JALON04_SERVER.dir/server/file_transfer.c.i
-.PHONY : server/file_transfer.c.i
-
-server/file_transfer.s: server/file_transfer.c.s
-
-.PHONY : server/file_transfer.s
-
-# target to generate assembly for a file
-server/file_transfer.c.s:
-	cd /home/elmarie/Documents/jalon04_marie_kern/build && $(MAKE) -f jalon04/CMakeFiles/RE216_JALON04_SERVER.dir/build.make jalon04/CMakeFiles/RE216_JALON04_SERVER.dir/server/file_transfer.c.s
-.PHONY : server/file_transfer.c.s
 
 server/server.o: server/server.c.o
 
@@ -257,7 +260,7 @@ server/server.o: server/server.c.o
 
 # target to build an object file
 server/server.c.o:
-	cd /home/elmarie/Documents/jalon04_marie_kern/build && $(MAKE) -f jalon04/CMakeFiles/RE216_JALON04_SERVER.dir/build.make jalon04/CMakeFiles/RE216_JALON04_SERVER.dir/server/server.c.o
+	cd /home/elmarie/Chat-app-multithreading-server-/build && $(MAKE) -f jalon04/CMakeFiles/RE216_JALON04_SERVER.dir/build.make jalon04/CMakeFiles/RE216_JALON04_SERVER.dir/server/server.c.o
 .PHONY : server/server.c.o
 
 server/server.i: server/server.c.i
@@ -266,7 +269,7 @@ server/server.i: server/server.c.i
 
 # target to preprocess a source file
 server/server.c.i:
-	cd /home/elmarie/Documents/jalon04_marie_kern/build && $(MAKE) -f jalon04/CMakeFiles/RE216_JALON04_SERVER.dir/build.make jalon04/CMakeFiles/RE216_JALON04_SERVER.dir/server/server.c.i
+	cd /home/elmarie/Chat-app-multithreading-server-/build && $(MAKE) -f jalon04/CMakeFiles/RE216_JALON04_SERVER.dir/build.make jalon04/CMakeFiles/RE216_JALON04_SERVER.dir/server/server.c.i
 .PHONY : server/server.c.i
 
 server/server.s: server/server.c.s
@@ -275,8 +278,35 @@ server/server.s: server/server.c.s
 
 # target to generate assembly for a file
 server/server.c.s:
-	cd /home/elmarie/Documents/jalon04_marie_kern/build && $(MAKE) -f jalon04/CMakeFiles/RE216_JALON04_SERVER.dir/build.make jalon04/CMakeFiles/RE216_JALON04_SERVER.dir/server/server.c.s
+	cd /home/elmarie/Chat-app-multithreading-server-/build && $(MAKE) -f jalon04/CMakeFiles/RE216_JALON04_SERVER.dir/build.make jalon04/CMakeFiles/RE216_JALON04_SERVER.dir/server/server.c.s
 .PHONY : server/server.c.s
+
+server/server_lib.o: server/server_lib.c.o
+
+.PHONY : server/server_lib.o
+
+# target to build an object file
+server/server_lib.c.o:
+	cd /home/elmarie/Chat-app-multithreading-server-/build && $(MAKE) -f jalon04/CMakeFiles/RE216_JALON04_SERVER.dir/build.make jalon04/CMakeFiles/RE216_JALON04_SERVER.dir/server/server_lib.c.o
+.PHONY : server/server_lib.c.o
+
+server/server_lib.i: server/server_lib.c.i
+
+.PHONY : server/server_lib.i
+
+# target to preprocess a source file
+server/server_lib.c.i:
+	cd /home/elmarie/Chat-app-multithreading-server-/build && $(MAKE) -f jalon04/CMakeFiles/RE216_JALON04_SERVER.dir/build.make jalon04/CMakeFiles/RE216_JALON04_SERVER.dir/server/server_lib.c.i
+.PHONY : server/server_lib.c.i
+
+server/server_lib.s: server/server_lib.c.s
+
+.PHONY : server/server_lib.s
+
+# target to generate assembly for a file
+server/server_lib.c.s:
+	cd /home/elmarie/Chat-app-multithreading-server-/build && $(MAKE) -f jalon04/CMakeFiles/RE216_JALON04_SERVER.dir/build.make jalon04/CMakeFiles/RE216_JALON04_SERVER.dir/server/server_lib.c.s
+.PHONY : server/server_lib.c.s
 
 server/users.o: server/users.c.o
 
@@ -284,7 +314,7 @@ server/users.o: server/users.c.o
 
 # target to build an object file
 server/users.c.o:
-	cd /home/elmarie/Documents/jalon04_marie_kern/build && $(MAKE) -f jalon04/CMakeFiles/RE216_JALON04_SERVER.dir/build.make jalon04/CMakeFiles/RE216_JALON04_SERVER.dir/server/users.c.o
+	cd /home/elmarie/Chat-app-multithreading-server-/build && $(MAKE) -f jalon04/CMakeFiles/RE216_JALON04_SERVER.dir/build.make jalon04/CMakeFiles/RE216_JALON04_SERVER.dir/server/users.c.o
 .PHONY : server/users.c.o
 
 server/users.i: server/users.c.i
@@ -293,7 +323,7 @@ server/users.i: server/users.c.i
 
 # target to preprocess a source file
 server/users.c.i:
-	cd /home/elmarie/Documents/jalon04_marie_kern/build && $(MAKE) -f jalon04/CMakeFiles/RE216_JALON04_SERVER.dir/build.make jalon04/CMakeFiles/RE216_JALON04_SERVER.dir/server/users.c.i
+	cd /home/elmarie/Chat-app-multithreading-server-/build && $(MAKE) -f jalon04/CMakeFiles/RE216_JALON04_SERVER.dir/build.make jalon04/CMakeFiles/RE216_JALON04_SERVER.dir/server/users.c.i
 .PHONY : server/users.c.i
 
 server/users.s: server/users.c.s
@@ -302,7 +332,7 @@ server/users.s: server/users.c.s
 
 # target to generate assembly for a file
 server/users.c.s:
-	cd /home/elmarie/Documents/jalon04_marie_kern/build && $(MAKE) -f jalon04/CMakeFiles/RE216_JALON04_SERVER.dir/build.make jalon04/CMakeFiles/RE216_JALON04_SERVER.dir/server/users.c.s
+	cd /home/elmarie/Chat-app-multithreading-server-/build && $(MAKE) -f jalon04/CMakeFiles/RE216_JALON04_SERVER.dir/build.make jalon04/CMakeFiles/RE216_JALON04_SERVER.dir/server/users.c.s
 .PHONY : server/users.c.s
 
 # Help Target
@@ -321,15 +351,18 @@ help:
 	@echo "... commons/functions.o"
 	@echo "... commons/functions.i"
 	@echo "... commons/functions.s"
+	@echo "... commons/network.o"
+	@echo "... commons/network.i"
+	@echo "... commons/network.s"
 	@echo "... server/channel.o"
 	@echo "... server/channel.i"
 	@echo "... server/channel.s"
-	@echo "... server/file_transfer.o"
-	@echo "... server/file_transfer.i"
-	@echo "... server/file_transfer.s"
 	@echo "... server/server.o"
 	@echo "... server/server.i"
 	@echo "... server/server.s"
+	@echo "... server/server_lib.o"
+	@echo "... server/server_lib.i"
+	@echo "... server/server_lib.s"
 	@echo "... server/users.o"
 	@echo "... server/users.i"
 	@echo "... server/users.s"
@@ -344,6 +377,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/elmarie/Documents/jalon04_marie_kern/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/elmarie/Chat-app-multithreading-server-/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 
