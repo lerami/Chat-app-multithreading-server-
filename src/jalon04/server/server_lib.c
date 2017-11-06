@@ -40,16 +40,16 @@ void * start_routine_new_client(void * arg){
   int rcvSock[20];
   int nbSock;
   int clientSent;
- //  char clientChan[256];
+  char clientChan[256];
   char error_msg[BUFFER_MAX_SIZE];
- //  char userEntry[124];
-	// char whoisBuff[40];
-	// char nickBuff[260];
- //  char msgBuff[510];
- //  char msgallBuff[510];
- //  char createChannelBuff[100];
- //  char joinChannelBuff[100];
- //  char quitChannelBuff[100];
+  char userEntry[124];
+	char whoisBuff[40];
+	char nickBuff[260];
+  char msgBuff[510];
+  char msgallBuff[510];
+  char createChannelBuff[100];
+  char joinChannelBuff[100];
+  char quitChannelBuff[100];
 
 	struct arg_threads* arg_threads=arg;
 	struct user** users = arg_threads->users;
