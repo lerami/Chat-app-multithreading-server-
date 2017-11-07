@@ -19,6 +19,7 @@ jalon 04 : chat system
 #include "../commons/network.h"
 #include "users.h"
 #include "channel.h"
+//#include "server_ftransfer.h"
 
 struct arg_threads {
   int* sockfd;
